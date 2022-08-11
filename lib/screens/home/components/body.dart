@@ -1,7 +1,7 @@
 import 'package:fling/screens/home/components/category.dart';
 import 'package:fling/screens/home/components/neighborhood.dart';
 import 'package:fling/screens/home/components/recommned.dart';
-import 'package:fling/screens/home/components/show_off.dart';
+import 'package:fling/screens/home/components/review.dart';
 import 'package:flutter/material.dart';
 
 class Body extends StatelessWidget {
@@ -11,8 +11,8 @@ class Body extends StatelessWidget {
       children: const <Widget>[
         Recommend(),
         Neighborhood(),
-        Category(),
-        ShowOff()
+        //Category(),
+        Review()
       ],
     ));
   }
