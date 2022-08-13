@@ -15,7 +15,7 @@ class Recommend extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-        color: const Color(0xFFEDF0F4),
+        color: const Color(0xFFFFFFFF),
         height: 280,
         child: Padding(
             padding: const EdgeInsets.fromLTRB(5, 5, 5, 10),
