@@ -13,7 +13,7 @@ class HomeScreen extends StatelessWidget {
 
   AppBar buildAppBar() {
     return AppBar(
-        backgroundColor: const Color(0xFFFFFFFF),
+        backgroundColor: const Color(0xFF909090),
         elevation: 0,
         leading: IconButton(
           onPressed: () {},

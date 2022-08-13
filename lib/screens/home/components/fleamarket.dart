@@ -1,6 +1,7 @@
+import 'package:fling/main.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:flutter_swiper/flutter_swiper.dart';
+import 'package:provider/provider.dart';
 
 List<Widget> imgList1 = [
   SvgPicture.asset('assets/images/section_2.svg', fit: BoxFit.cover),
@@ -53,7 +54,7 @@ Container Function(int index) frame = (index) {
                         Container(
                             padding: const EdgeInsets.fromLTRB(5, 0, 0, 0),
                             child: Text(titleList1[index],
-                                style: TextStyle(fontSize: 19))),
+                                style: const TextStyle(fontSize: 19))),
                         Container(
                             padding: const EdgeInsets.fromLTRB(5, 5, 0, 0),
                             child: Text(titleList2[index], style: const TextStyle(fontSize: 13)))
@@ -73,30 +74,38 @@ Container Function(int index) frame = (index) {
       ]));
 };
 
-class Neighborhood extends StatelessWidget {
-  const Neighborhood({Key? key}) : super(key: key);
+class Fleamarket extends StatelessWidget {
+  const Fleamarket({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
+    var provider = Provider.of<BottomNavigationBarProvider>(context);
     return Container(
-        color: const Color(0xFFF8F8F8),
+        color: const Color(0xFFFFFFFF),
         child: Column(
           children: [
-            Container(
-                padding: const EdgeInsets.fromLTRB(25, 18, 27, 0),
-                child: Row(
-                  crossAxisAlignment: CrossAxisAlignment.end,
-                  children: const [
-                    Expanded(
-                        flex: 6,
-                        child: Text('우리동네 플리마켓',
-                            style: TextStyle(
-                                fontSize: 19, fontWeight: FontWeight.bold))),
-                    Expanded(
-                        flex: 1,
-                        child: Text('더보기', style: TextStyle(fontSize: 13)))
-                  ],
-                )),
+            SizedBox(
+                child: Padding(
+                    padding: const EdgeInsets.fromLTRB(28,18,27,0),
+                    child: Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        crossAxisAlignment: CrossAxisAlignment.end,
+                        children: [
+                          const Text('우리동네 플리마켓',
+                              style: TextStyle(
+                                  fontSize: 19, fontWeight: FontWeight.bold)),
+                          SizedBox(
+                              height: 19,
+                              child: TextButton(
+                                  onPressed: () => {provider.currentIndex = 2},
+                                  style: ButtonStyle(
+                                      padding: MaterialStateProperty.all(
+                                          EdgeInsets.zero)),
+                                  child: const Text('더보기',
+                                      style: TextStyle(
+                                          fontSize: 13,
+                                          color: Color(0xFF000000))))),
+                        ]))),
             SizedBox(height: 310, child: listviewBuilder())
           ],
         ));
