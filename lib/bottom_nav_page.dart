@@ -35,7 +35,10 @@ class _BottomNavPageState extends State<BottomNavPage> {
     var provider = Provider.of<BottomNavigationBarProvider>(context);
     return Scaffold(
         body: SafeArea(
-          child: currentTab[provider.currentIndex],
+          child: IndexedStack(
+            index: provider.currentIndex,
+            children: currentTab,//[provider.currentIndex],
+          )
         ),
         bottomNavigationBar: BottomNavigationBar(
           items: [
