@@ -1,7 +1,8 @@
-import 'package:fling/main.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:provider/provider.dart';
+
+import 'package:fling/bottom_nav_page.dart';
 
 List<Widget> imgList1 = [
   SvgPicture.asset('assets/images/section_2.svg', fit: BoxFit.cover),
@@ -57,7 +58,8 @@ Container Function(int index) frame = (index) {
                                 style: const TextStyle(fontSize: 19))),
                         Container(
                             padding: const EdgeInsets.fromLTRB(5, 5, 0, 0),
-                            child: Text(titleList2[index], style: const TextStyle(fontSize: 13)))
+                            child: Text(titleList2[index],
+                                style: const TextStyle(fontSize: 13)))
                       ])),
               Expanded(
                   flex: 1,
@@ -86,7 +88,7 @@ class Fleamarket extends StatelessWidget {
           children: [
             SizedBox(
                 child: Padding(
-                    padding: const EdgeInsets.fromLTRB(28,18,27,0),
+                    padding: const EdgeInsets.fromLTRB(28, 18, 27, 0),
                     child: Row(
                         mainAxisAlignment: MainAxisAlignment.spaceBetween,
                         crossAxisAlignment: CrossAxisAlignment.end,

@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:provider/provider.dart';
-import 'package:fling/main.dart';
+
+import 'package:fling/bottom_nav_page.dart';
 
 List<Widget> circle1 = [
   SvgPicture.asset('assets/icons/circle.svg', width: 35, height: 35),
