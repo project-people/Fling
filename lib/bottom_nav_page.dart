@@ -1,11 +1,9 @@
-import 'package:fling/main.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_svg/flutter_svg.dart';
+import 'package:provider/provider.dart';
 
 import 'package:fling/screens/home/home_screen.dart';
 import 'package:fling/screens/review/review_screen.dart';
-import 'package:flutter_svg/flutter_svg.dart';
-
-import 'package:provider/provider.dart';
 
 List<Widget> icon = [
   SvgPicture.asset('assets/icons/bottom_home.svg', width: 35, height: 35),
@@ -24,12 +22,13 @@ class BottomNavPage extends StatefulWidget {
 }
 
 class _BottomNavPageState extends State<BottomNavPage> {
-
-  var currentTab = [ HomeScreen(),
+  var currentTab = [
+    HomeScreen(),
     ReviewScreen(),
     Text('플리마켓'),
     Text('저장'),
-    Text('후기')];
+    Text('후기')
+  ];
 
   @override
   Widget build(BuildContext context) {
@@ -48,7 +47,9 @@ class _BottomNavPageState extends State<BottomNavPage> {
           ],
           type: BottomNavigationBarType.fixed,
           currentIndex: provider.currentIndex,
-          onTap: (index) {provider.currentIndex = index;},
+          onTap: (index) {
+            provider.currentIndex = index;
+          },
           showSelectedLabels: false,
           showUnselectedLabels: false,
         ));
@@ -63,4 +64,15 @@ class _BottomNavPageState extends State<BottomNavPage> {
   void dispose() {
     super.dispose();
   }*/
+}
+
+class BottomNavigationBarProvider extends ChangeNotifier {
+  int _currentIndex = 0;
+
+  int get currentIndex => _currentIndex;
+
+  set currentIndex(int index) {
+    _currentIndex = index;
+    notifyListeners();
+  }
 }

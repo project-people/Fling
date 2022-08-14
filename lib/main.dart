@@ -1,6 +1,7 @@
-import 'package:fling/screens/bottom_nav_page.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+
+import 'package:fling/bottom_nav_page.dart';
 
 void main() {
   runApp(const MyApp());
@@ -17,18 +18,6 @@ class MyApp extends StatelessWidget {
         home: ChangeNotifierProvider<BottomNavigationBarProvider>(
           create: (_) => BottomNavigationBarProvider(),
           child: const BottomNavPage(),
-        )
-    );
-  }
-}
-
-class BottomNavigationBarProvider extends ChangeNotifier {
-  int _currentIndex = 0;
-
-  int get currentIndex => _currentIndex;
-
-  set currentIndex(int index) {
-    _currentIndex = index;
-    notifyListeners();
+        ));
   }
 }
