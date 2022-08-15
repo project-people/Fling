@@ -1,4 +1,4 @@
-import 'package:fling/screens/signin/signup_screen.dart';
+
 import 'package:flutter/material.dart';
 import 'components/body_login.dart';
 
@@ -7,7 +7,6 @@ void main() => runApp(MaterialApp(
     initialRoute: '/',
     routes: {
       '/': (context) => LoginScreen(),
-      '/signup':(context) => SignUpScreen()
     }
 ));
 
