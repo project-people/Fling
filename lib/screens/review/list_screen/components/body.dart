@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 
-import 'package:fling/screens/review/components/filter.dart';
-import 'package:fling/screens/review/components/post_list.dart';
+import 'package:fling/screens/review/list_screen/components/filter.dart';
+import 'package:fling/screens/review/list_screen/components/post_list.dart';
 
 Widget postAdd = SvgPicture.asset('assets/icons/circle.svg', width: 54, height: 54);
 
