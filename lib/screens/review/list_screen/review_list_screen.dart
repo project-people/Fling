@@ -8,21 +8,22 @@ class ReviewListScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
+    AppBar buildAppBar() {
+      return AppBar(
+          backgroundColor: const Color(0xFF909090),
+          elevation: 0,
+          title: const Text('후기 게시판'),
+          actions: <Widget>[
+            IconButton(
+                onPressed: () {},
+                icon: SvgPicture.asset('assets/icons/chat_alarm.svg'))
+          ]);
+    }
+
     return Scaffold(
       appBar: buildAppBar(),
       body: const Body(),
     );
-  }
-
-  AppBar buildAppBar() {
-    return AppBar(
-        backgroundColor: const Color(0xFF909090),
-        elevation: 0,
-        title: const Text('후기 게시판'),
-        actions: <Widget>[
-          IconButton(
-              onPressed: () {},
-              icon: SvgPicture.asset('assets/icons/chat_alarm.svg'))
-        ]);
   }
 }
