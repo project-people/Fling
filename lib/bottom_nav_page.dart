@@ -3,7 +3,7 @@ import 'package:flutter_svg/flutter_svg.dart';
 import 'package:provider/provider.dart';
 
 import 'package:fling/screens/home/home_screen.dart';
-import 'package:fling/screens/review/review_screen.dart';
+import 'package:fling/screens/review/list_screen/review_list_screen.dart';
 
 List<Widget> icon = [
   SvgPicture.asset('assets/icons/bottom_home.svg', width: 35, height: 35),
@@ -24,7 +24,7 @@ class BottomNavPage extends StatefulWidget {
 class _BottomNavPageState extends State<BottomNavPage> {
   var currentTab = [
     HomeScreen(),
-    ReviewScreen(),
+    ReviewListScreen(),
     Text('플리마켓'),
     Text('저장'),
     Text('후기')
@@ -37,7 +37,7 @@ class _BottomNavPageState extends State<BottomNavPage> {
         body: SafeArea(
           child: IndexedStack(
             index: provider.currentIndex,
-            children: currentTab,//[provider.currentIndex],
+            children: currentTab,
           )
         ),
         bottomNavigationBar: BottomNavigationBar(
@@ -53,7 +53,7 @@ class _BottomNavPageState extends State<BottomNavPage> {
           onTap: (index) {
             provider.currentIndex = index;
           },
-          showSelectedLabels: false,
+          //showSelectedLabels: false,
           showUnselectedLabels: false,
         ));
   }
