@@ -1,6 +1,7 @@
-import 'package:fling/screens/review/components/body.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+
+import 'package:fling/screens/review/components/body.dart';
 
 class ReviewScreen extends StatelessWidget {
   @override
@@ -15,10 +16,7 @@ class ReviewScreen extends StatelessWidget {
     return AppBar(
         backgroundColor: const Color(0xFF909090),
         elevation: 0,
-        leading: IconButton(
-          onPressed: () {},
-          icon: SvgPicture.asset('assets/icons/logo.svg'),
-        ),
+        title: Text('후기 게시판'),
         actions: <Widget>[
           IconButton(
               onPressed: () {},
