@@ -3,10 +3,10 @@ import 'package:flutter_svg/svg.dart';
 import 'package:flutter_swiper/flutter_swiper.dart';
 
 List<Widget> imgList = [
-  SvgPicture.asset('assets/images/section_1.svg'),
-  SvgPicture.asset('assets/images/section_2.svg'),
-  SvgPicture.asset('assets/images/section_3.svg'),
-  SvgPicture.asset('assets/images/section_4.svg')
+  SvgPicture.asset('assets/images/section_1.svg', width: 436, height: 267),
+  SvgPicture.asset('assets/images/section_1.svg', width: 436, height: 267),
+  SvgPicture.asset('assets/images/section_1.svg', width: 436, height: 267),
+  SvgPicture.asset('assets/images/section_1.svg', width: 436, height: 267)
 ];
 
 class Recommend extends StatelessWidget {
@@ -15,7 +15,7 @@ class Recommend extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-        color: const Color(0xFFEDF0F4),
+        color: const Color(0xFFFFFFFF),
         height: 280,
         child: Padding(
             padding: const EdgeInsets.fromLTRB(5, 5, 5, 10),
