@@ -21,7 +21,7 @@ class _BodyLogin extends State<BodyLogin> {
               Container(
                   alignment: Alignment.centerLeft,
                   padding: EdgeInsets.only(top: 60, bottom: 25),
-                  child: Text( '플링이랑\n플리마켓\n열어봐요', style:
+                  child: Text( '플링이랑\n플리마켓 열어\n봐요 아아아', style:
                         Theme.of(context).textTheme.headline3?.copyWith(color:Colors.black, fontWeight: FontWeight.bold),
                   ),
               ),

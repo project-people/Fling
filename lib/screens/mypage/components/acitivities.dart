@@ -11,20 +11,40 @@ class Acitivities extends StatelessWidget {
         child: Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-      IconButton(
-        onPressed: () {},
-        icon: SvgPicture.asset('assets/icons/mypage_cart.svg'),
-      ),
-      IconButton(
-        onPressed: () {},
-        icon: SvgPicture.asset('assets/icons/mypage_alarm.svg'),
-      ),
-      IconButton(
-        onPressed: () {},
-        icon: SvgPicture.asset('assets/icons/mypage_runcart.svg'),
-      )
-    ],
-    )
+            Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children:[
+                IconButton(
+                      onPressed: () {},
+                      icon: SvgPicture.asset('assets/icons/mypage_cart.svg', width: 60, height: 60),),
+                const Text('마이페이지', style: TextStyle(color: Colors.black, fontSize: 14),),
+                ]
+              ),
+
+
+        Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+        children:[
+          IconButton(
+            onPressed: () {},
+            icon: SvgPicture.asset('assets/icons/mypage_alarm.svg', width: 60, height: 60),
+          ),
+         const Text('알림', style: TextStyle(color: Colors.black, fontSize: 14))
+        ]
+        ),
+
+
+            Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+                children: [
+                IconButton(
+                  onPressed: () {},
+                  icon: SvgPicture.asset('assets/icons/mypage_runcart.svg', width: 60, height: 60)),
+                  const Text('관심 글', style: TextStyle(color: Colors.black, fontSize:14))
+                  ],
+            )
+        ],
+        )
     );
   }
 }

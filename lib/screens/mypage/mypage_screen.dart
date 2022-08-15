@@ -11,6 +11,7 @@ class MypageScreen extends StatelessWidget{
   Widget build(BuildContext context){
     return Scaffold(
       appBar: AppBar(
+              centerTitle: true,
               title: const Text(String_title, style: TextStyle(color: Colors.black)),
               backgroundColor: Colors.grey
       ),
