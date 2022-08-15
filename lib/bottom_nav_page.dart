@@ -37,7 +37,7 @@ class _BottomNavPageState extends State<BottomNavPage> {
         body: SafeArea(
           child: IndexedStack(
             index: provider.currentIndex,
-            children: currentTab,//[provider.currentIndex],
+            children: currentTab,
           )
         ),
         bottomNavigationBar: BottomNavigationBar(
@@ -53,7 +53,7 @@ class _BottomNavPageState extends State<BottomNavPage> {
           onTap: (index) {
             provider.currentIndex = index;
           },
-          showSelectedLabels: false,
+          //showSelectedLabels: false,
           showUnselectedLabels: false,
         ));
   }
