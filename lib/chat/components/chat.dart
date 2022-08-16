@@ -110,12 +110,11 @@ class _ChatState extends State<Chat> {
 
                 var now = DateTime.now();
                 var hour = int.parse(DateFormat('HH').format(now));
-                var time = DateFormat('').format(now);
+                var time = DateFormat('HH:mm').format(now);
                 if (hour > 11) {
                   var ampm = "오후";
-                  var hourNow = hour - 12;
                 } else {
-                  var hourNow = hour;
+                  var ampm = "오전";
                 }
               },
               child: Container(
