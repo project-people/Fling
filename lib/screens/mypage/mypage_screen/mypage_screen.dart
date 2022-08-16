@@ -1,4 +1,4 @@
-import 'package:fling/screens/mypage/components/body_mypage.dart';
+import 'package:fling/screens/mypage/mypage_screen/components/body_mypage.dart';
 import 'package:flutter/material.dart';
 
 

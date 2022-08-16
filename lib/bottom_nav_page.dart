@@ -4,6 +4,8 @@ import 'package:provider/provider.dart';
 
 import 'package:fling/screens/home/home_screen.dart';
 import 'package:fling/screens/review/list_screen/review_list_screen.dart';
+import 'package:fling/screens/mypage/saved/saved_screen.dart';
+import 'package:fling/screens/mypage/mypage_screen/mypage_screen.dart';
 
 List<Widget> icon = [
   SvgPicture.asset('assets/icons/bottom_home.svg', width: 35, height: 35),
@@ -26,8 +28,8 @@ class _BottomNavPageState extends State<BottomNavPage> {
     HomeScreen(),
     ReviewListScreen(),
     Text('플리마켓'),
-    Text('저장'),
-    Text('후기')
+    SavedScreen(),
+    MypageScreen()
   ];
 
   @override
