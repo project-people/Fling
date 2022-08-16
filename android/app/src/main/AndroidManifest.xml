@@ -1,10 +1,21 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.fling.fling">
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+
    <application
         android:label="fling"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
-        <activity
+       android:label="google_maps_flutter"
+       android:icon="@mipmap/ic_launcher">
+
+       <!-- TODO: Add your API key here -->
+       <meta-data android:name="com.google.android.geo.API_KEY"
+           android:value="AIzaSyBVxFqeDEXhQVouTCFsLihwxjwKaWy1ibE"/>
+
+       <activity
             android:name=".MainActivity"
             android:exported="true"
             android:launchMode="singleTop"
@@ -30,5 +41,6 @@
         <meta-data
             android:name="flutterEmbedding"
             android:value="2" />
+
     </application>
 </manifest>

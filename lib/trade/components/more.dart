@@ -13,10 +13,9 @@ class More extends StatelessWidget {
           sizeHeight * 0.012, sizeWidth * 0.376, sizeHeight * 0.012),
       width: sizeWidth * 0.872,
       height: sizeHeight * 0.052,
-      color: Color(0xffD9D9D9),
+      color: const Color(0xffD9D9D9),
       child: Text("더보기",
           style: TextStyle(
-              fontFamily: "KoreanFont",
               fontSize: sizeWidth * 0.0426,
               fontWeight: FontWeight.w400)),
     );

@@ -2,6 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:intl/intl.dart';
 
+import 'chat_plus_button.dart';
+
 class Chat extends StatefulWidget {
   const Chat({Key? key}) : super(key: key);
 
@@ -68,24 +70,7 @@ class _ChatState extends State<Chat> {
         )),
         SizedBox(
           child: Row(children: [
-            GestureDetector(
-                onTap: () {},
-                child: Stack(
-                  children: [
-                    Container(
-                        color: const Color(0xffF1F1F5),
-                        width: sizeWidth * 0.138,
-                        height: sizeWidth * 0.138),
-                    Positioned(
-                      left: sizeWidth * 0.053,
-                      top: sizeWidth * 0.053,
-                      child: Icon(
-                        Icons.add,
-                        size: sizeWidth * 0.032,
-                      ),
-                    )
-                  ],
-                )),
+            const ChatPlus(),
             Expanded(
               child: SizedBox(
                 height: sizeHeight * 0.064,

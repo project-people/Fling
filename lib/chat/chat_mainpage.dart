@@ -52,9 +52,9 @@ class ChatMain extends StatelessWidget {
               Stack(
                 children: [
                   Container(
-                    width: sizeWidth * 0.872,
-                    height: sizeHeight * 0.064,
-                  ),
+                      width: sizeWidth * 0.872,
+                      height: sizeHeight * 0.064,
+                      color: const Color(0xffF1F1F5)),
                   Positioned(
                     left: sizeWidth * 0.037,
                     top: sizeHeight * 0.016,
@@ -107,8 +107,8 @@ class ChatMain extends StatelessWidget {
               ),
               GestureDetector(
                 onTap: () {
-                  Navigator.push(
-                      context, MaterialPageRoute(builder: (context) => Chat()));
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => const Chat()));
                 },
                 child: Stack(
                   children: [
@@ -174,8 +174,10 @@ class ChatMain extends StatelessWidget {
                   height: sizeHeight * 0.001),
               GestureDetector(
                   onTap: () {
-                    Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => TradeMain()));
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const TradeMain()));
                   },
                   child: Container(
                       width: 50, height: 50, color: Colors.blueAccent)),
