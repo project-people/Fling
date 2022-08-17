@@ -1,13 +1,17 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.fling.fling">
+<<<<<<< HEAD
 
     <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
     <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
 
+=======
+>>>>>>> bbea957934fc7e9c31367f18f7b53ee8e07b06ae
    <application
         android:label="fling"
         android:name="${applicationName}"
         android:icon="@mipmap/ic_launcher">
+<<<<<<< HEAD
        android:label="google_maps_flutter"
        android:icon="@mipmap/ic_launcher">
 
@@ -16,6 +20,9 @@
            android:value="AIzaSyBVxFqeDEXhQVouTCFsLihwxjwKaWy1ibE"/>
 
        <activity
+=======
+        <activity
+>>>>>>> bbea957934fc7e9c31367f18f7b53ee8e07b06ae
             android:name=".MainActivity"
             android:exported="true"
             android:launchMode="singleTop"
@@ -41,6 +48,11 @@
         <meta-data
             android:name="flutterEmbedding"
             android:value="2" />
+<<<<<<< HEAD
 
     </application>
 </manifest>
+=======
+    </application>
+</manifest>
+>>>>>>> bbea957934fc7e9c31367f18f7b53ee8e07b06ae

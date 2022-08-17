@@ -47,8 +47,13 @@ android {
         applicationId "com.fling.fling"
         // You can update the following values to match your application needs.
         // For more information, see: https://docs.flutter.dev/deployment/android#reviewing-the-build-configuration.
+<<<<<<< HEAD
         minSdkVersion 20
         targetSdkVersion 30
+=======
+        minSdkVersion flutter.minSdkVersion
+        targetSdkVersion flutter.targetSdkVersion
+>>>>>>> bbea957934fc7e9c31367f18f7b53ee8e07b06ae
         versionCode flutterVersionCode.toInteger()
         versionName flutterVersionName
     }
