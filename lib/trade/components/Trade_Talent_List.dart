@@ -2,17 +2,17 @@ import 'package:fling/trade/trade_stuff_detail.dart';
 import 'package:flutter/material.dart';
 
 final List<String> title = <String>[
-  "함께 음식 팔 사람",
-  "함께 보석 팔 사람",
-  "함께 옷 팔 사람",
-  "함께 뭔가 팔 사람",
-  "함께?",
-  "함께 붸?",
-  "함께 에엙?"
+  "함께 요리 재능을 나눌 사람",
+  "함께 뜨개질 재능을 나눌 사람",
+  "함께 아무 재능이나 나눌 사람",
+  "함께 게임 할 사람",
+  "함께 뭔가 할 사람",
+  "함께 놀 사람",
+  "함께 코드 짤 사람"
 ];
 
-class StuffList extends StatelessWidget {
-  const StuffList({Key? key}) : super(key: key);
+class TalList extends StatelessWidget {
+  const TalList({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -21,7 +21,7 @@ class StuffList extends StatelessWidget {
 
     return GridView.builder(
         padding:
-            EdgeInsets.only(left: sizeWidth * 0.064),
+        EdgeInsets.only(left: sizeWidth * 0.064),
         physics: const NeverScrollableScrollPhysics(),
         shrinkWrap: true,
         gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
@@ -79,8 +79,8 @@ class StuffList extends StatelessWidget {
   }
 }
 
-class LittleSfList extends StatelessWidget {
-  const LittleSfList({Key? key}) : super(key: key);
+class LittleTalList extends StatelessWidget {
+  const LittleTalList({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -92,7 +92,7 @@ class LittleSfList extends StatelessWidget {
         EdgeInsets.only(left: sizeWidth * 0.064),
         physics: const NeverScrollableScrollPhysics(),
         shrinkWrap: true,
-        gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
+        gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
           crossAxisCount: 2,
         ),
         itemCount: 4,
@@ -144,4 +144,4 @@ class LittleSfList extends StatelessWidget {
             ],
           );
         });
-}}
+  }}

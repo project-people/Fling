@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:intl/intl.dart';
 
 import 'chat_plus_button.dart';
@@ -27,7 +26,10 @@ class _ChatState extends State<Chat> {
         Padding(padding: EdgeInsets.only(top: statusBarHeight)),
         Stack(
           children: [
-            SvgPicture.asset("assets/images/gnb.svg", width: sizeWidth),
+            Container(
+                width: sizeWidth,
+                height: sizeWidth * 0.16,
+                color: const Color(0xff909090)),
             Positioned(
                 left: sizeWidth * 0.064,
                 top: sizeHeight * 0.017,

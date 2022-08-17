@@ -44,7 +44,6 @@ class _PromiseState extends State<Promise> {
                             color: const Color(0xff191919),
                             fontSize: sizeWidth * 0.037,
                             fontWeight: FontWeight.w400)),
-                    Icon()
                   ],
                 ),
               ),

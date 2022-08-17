@@ -1,5 +1,5 @@
-import 'package:fling/trade/components/trade_box_Stuff.dart';
-import 'package:fling/trade/components/trade_box_Talent.dart';
+import 'package:fling/trade/components/Trade_Stuff_List.dart';
+import 'package:fling/trade/components/Trade_Talent_List.dart';
 import 'package:fling/trade/trade_stuff.dart';
 import 'package:fling/trade/trade_talent.dart';
 import 'package:fling/trade/components/more.dart';
@@ -11,29 +11,21 @@ class TradeMain extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final double statusBarHeight = MediaQuery.of(context).padding.top;
     final double sizeWidth = MediaQuery.of(context).size.width;
     final double sizeHeight = MediaQuery.of(context).size.height;
 
     return Scaffold(
+      appBar: AppBar(
+        iconTheme: const IconThemeData(color: Colors.black),
+        backgroundColor: const Color(0xFF909090),
+        elevation: 0,
+        title: const Text("거래 게시판",
+            style: TextStyle(color: Color(0xff000000))),
+      ),
       body: SingleChildScrollView(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           children: [
-            Padding(padding: EdgeInsets.only(top: statusBarHeight)),
-            Stack(
-              children: [
-                SvgPicture.asset("assets/svg/gnb.svg", width: sizeWidth),
-                Positioned(
-                  left: sizeWidth * 0.0946,
-                  top: sizeHeight * 0.0197,
-                  child: Text("거래 게시판",
-                      style: TextStyle(
-                          fontSize: sizeWidth * 0.048,
-                          fontWeight: FontWeight.w300)),
-                ),
-              ],
-            ),
             SizedBox(
               height: sizeHeight * 0.024,
             ),
@@ -80,12 +72,11 @@ class TradeMain extends StatelessWidget {
             SizedBox(
               height: sizeHeight * 0.035,
             ),
-            const TradeBoxSf(),
-            SizedBox(height: sizeHeight * 0.024),
+            const LittleSfList(),
             GestureDetector(
                 onTap: () {
                   Navigator.push(context,
-                      MaterialPageRoute(builder: (context) => TradeSf()));
+                      MaterialPageRoute(builder: (context) => const TradeSf()));
                 },
                 child: const More()),
             SizedBox(height: sizeHeight * 0.032),
@@ -105,8 +96,7 @@ class TradeMain extends StatelessWidget {
               ],
             ),
             SizedBox(height: sizeHeight * 0.035),
-            const TradeBoxTal(),
-            SizedBox(height: sizeHeight * 0.024),
+            const LittleTalList(),
             GestureDetector(
                 onTap: () {
                   Navigator.push(context,
