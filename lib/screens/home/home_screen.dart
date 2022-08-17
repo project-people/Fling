@@ -19,8 +19,9 @@ class HomeScreen extends StatelessWidget {
           ),
           actions: <Widget>[
             IconButton(
-                onPressed: () {Navigator.push(context,
-                    MaterialPageRoute(builder: (context) => const ChatMain()));
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (context) => const ChatMain()));
                 },
                 icon: SvgPicture.asset('assets/icons/chat_alarm.svg'))
           ]);
