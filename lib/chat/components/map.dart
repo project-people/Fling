@@ -31,7 +31,7 @@ class _MapSampleState extends State<MapSample> {
       ),
       body: Stack(
         children: [
-          Container(
+          SizedBox(
             height: double.infinity,
             width: double.infinity,
             child: GoogleMap(

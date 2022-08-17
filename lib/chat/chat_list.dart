@@ -1,8 +1,6 @@
 import 'package:fling/chat/components/chat.dart';
 import 'package:flutter/material.dart';
 
-//채팅방 목록 리스트 만들 예정
-
 class ChatList extends StatefulWidget {
   const ChatList({Key? key}) : super(key: key);
 
