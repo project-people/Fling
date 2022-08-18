@@ -20,6 +20,7 @@ class _ChatState extends State<Chat> {
     final double sizeWidth = MediaQuery.of(context).size.width;
     final double sizeHeight = MediaQuery.of(context).size.height;
 
+
     return Scaffold(
       backgroundColor: Colors.white,
       body: Column(children: [

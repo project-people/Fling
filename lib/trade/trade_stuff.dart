@@ -18,7 +18,6 @@ class TradeSf extends StatelessWidget {
         ),
         body: SingleChildScrollView(
           child: Column(
-            mainAxisAlignment: MainAxisAlignment.start,
             children: [
               SizedBox(height: sizeWidth * 0.078),
               const Text(

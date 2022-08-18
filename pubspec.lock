@@ -7,11 +7,7 @@ packages:
       name: async
       url: "https://pub.dartlang.org"
     source: hosted
-<<<<<<< HEAD
     version: "2.9.0"
-=======
-    version: "2.8.2"
->>>>>>> bbea957934fc7e9c31367f18f7b53ee8e07b06ae
   boolean_selector:
     dependency: transitive
     description:
@@ -25,29 +21,14 @@ packages:
       name: characters
       url: "https://pub.dartlang.org"
     source: hosted
-<<<<<<< HEAD
     version: "1.2.1"
-=======
-    version: "1.2.0"
-  charcode:
-    dependency: transitive
-    description:
-      name: charcode
-      url: "https://pub.dartlang.org"
-    source: hosted
-    version: "1.3.1"
->>>>>>> bbea957934fc7e9c31367f18f7b53ee8e07b06ae
   clock:
     dependency: transitive
     description:
       name: clock
       url: "https://pub.dartlang.org"
     source: hosted
-<<<<<<< HEAD
     version: "1.1.1"
-=======
-    version: "1.1.0"
->>>>>>> bbea957934fc7e9c31367f18f7b53ee8e07b06ae
   collection:
     dependency: transitive
     description:
@@ -68,11 +49,7 @@ packages:
       name: fake_async
       url: "https://pub.dartlang.org"
     source: hosted
-<<<<<<< HEAD
     version: "1.3.1"
-=======
-    version: "1.3.0"
->>>>>>> bbea957934fc7e9c31367f18f7b53ee8e07b06ae
   flutter:
     dependency: "direct main"
     description: flutter
@@ -92,7 +69,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "0.0.3"
-<<<<<<< HEAD
   flutter_plugin_android_lifecycle:
     dependency: transitive
     description:
@@ -100,8 +76,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.0.7"
-=======
->>>>>>> bbea957934fc7e9c31367f18f7b53ee8e07b06ae
   flutter_svg:
     dependency: "direct main"
     description:
@@ -121,23 +95,34 @@ packages:
     description: flutter
     source: sdk
     version: "0.0.0"
-<<<<<<< HEAD
   google_maps_flutter:
     dependency: "direct main"
     description:
       name: google_maps_flutter
       url: "https://pub.dartlang.org"
     source: hosted
+    version: "2.1.12"
+  google_maps_flutter_android:
+    dependency: transitive
+    description:
+      name: google_maps_flutter_android
+      url: "https://pub.dartlang.org"
+    source: hosted
     version: "2.1.10"
+  google_maps_flutter_ios:
+    dependency: transitive
+    description:
+      name: google_maps_flutter_ios
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "2.1.11"
   google_maps_flutter_platform_interface:
     dependency: transitive
     description:
       name: google_maps_flutter_platform_interface
       url: "https://pub.dartlang.org"
     source: hosted
-    version: "2.2.1"
-=======
->>>>>>> bbea957934fc7e9c31367f18f7b53ee8e07b06ae
+    version: "2.2.2"
   intl:
     dependency: "direct main"
     description:
@@ -158,33 +143,21 @@ packages:
       name: matcher
       url: "https://pub.dartlang.org"
     source: hosted
-<<<<<<< HEAD
     version: "0.12.12"
-=======
-    version: "0.12.11"
->>>>>>> bbea957934fc7e9c31367f18f7b53ee8e07b06ae
   material_color_utilities:
     dependency: transitive
     description:
       name: material_color_utilities
       url: "https://pub.dartlang.org"
     source: hosted
-<<<<<<< HEAD
     version: "0.2.0"
-=======
-    version: "0.1.4"
->>>>>>> bbea957934fc7e9c31367f18f7b53ee8e07b06ae
   meta:
     dependency: transitive
     description:
       name: meta
       url: "https://pub.dartlang.org"
     source: hosted
-<<<<<<< HEAD
     version: "1.8.0"
-=======
-    version: "1.7.0"
->>>>>>> bbea957934fc7e9c31367f18f7b53ee8e07b06ae
   nested:
     dependency: transitive
     description:
@@ -198,11 +171,7 @@ packages:
       name: path
       url: "https://pub.dartlang.org"
     source: hosted
-<<<<<<< HEAD
     version: "1.8.2"
-=======
-    version: "1.8.1"
->>>>>>> bbea957934fc7e9c31367f18f7b53ee8e07b06ae
   path_drawing:
     dependency: transitive
     description:
@@ -224,7 +193,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "5.0.0"
-<<<<<<< HEAD
   plugin_platform_interface:
     dependency: transitive
     description:
@@ -232,8 +200,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.1.2"
-=======
->>>>>>> bbea957934fc7e9c31367f18f7b53ee8e07b06ae
   provider:
     dependency: "direct main"
     description:
@@ -241,6 +207,13 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "6.0.3"
+  scroll_to_index:
+    dependency: "direct main"
+    description:
+      name: scroll_to_index
+      url: "https://pub.dartlang.org"
+    source: hosted
+    version: "3.0.1"
   sky_engine:
     dependency: transitive
     description: flutter
@@ -252,11 +225,7 @@ packages:
       name: source_span
       url: "https://pub.dartlang.org"
     source: hosted
-<<<<<<< HEAD
     version: "1.9.1"
-=======
-    version: "1.8.2"
->>>>>>> bbea957934fc7e9c31367f18f7b53ee8e07b06ae
   stack_trace:
     dependency: transitive
     description:
@@ -271,7 +240,6 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.1.0"
-<<<<<<< HEAD
   stream_transform:
     dependency: transitive
     description:
@@ -279,41 +247,27 @@ packages:
       url: "https://pub.dartlang.org"
     source: hosted
     version: "2.0.0"
-=======
->>>>>>> bbea957934fc7e9c31367f18f7b53ee8e07b06ae
   string_scanner:
     dependency: transitive
     description:
       name: string_scanner
       url: "https://pub.dartlang.org"
     source: hosted
-<<<<<<< HEAD
     version: "1.1.1"
-=======
-    version: "1.1.0"
->>>>>>> bbea957934fc7e9c31367f18f7b53ee8e07b06ae
   term_glyph:
     dependency: transitive
     description:
       name: term_glyph
       url: "https://pub.dartlang.org"
     source: hosted
-<<<<<<< HEAD
     version: "1.2.1"
-=======
-    version: "1.2.0"
->>>>>>> bbea957934fc7e9c31367f18f7b53ee8e07b06ae
   test_api:
     dependency: transitive
     description:
       name: test_api
       url: "https://pub.dartlang.org"
     source: hosted
-<<<<<<< HEAD
     version: "0.4.12"
-=======
-    version: "0.4.9"
->>>>>>> bbea957934fc7e9c31367f18f7b53ee8e07b06ae
   transformer_page_view:
     dependency: transitive
     description:
@@ -337,4 +291,4 @@ packages:
     version: "6.1.0"
 sdks:
   dart: ">=2.17.6 <3.0.0"
-  flutter: ">=2.11.0-0.1.pre"
+  flutter: ">=3.0.0"
