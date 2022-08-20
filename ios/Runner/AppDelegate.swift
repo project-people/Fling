@@ -1,5 +1,9 @@
 import UIKit
 import Flutter
+<<<<<<< HEAD
+import GoogleMaps
+=======
+>>>>>>> bbea957934fc7e9c31367f18f7b53ee8e07b06ae
 
 @UIApplicationMain
 @objc class AppDelegate: FlutterAppDelegate {

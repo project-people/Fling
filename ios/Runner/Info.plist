@@ -45,5 +45,10 @@
 	<false/>
 	<key>CADisableMinimumFrameDurationOnPhone</key>
 	<true/>
+<<<<<<< HEAD
+	<key>NSLocationWhenInUseUsageDescription</key>
+    <string>The app needs location permission</string>
+=======
+>>>>>>> bbea957934fc7e9c31367f18f7b53ee8e07b06ae
 </dict>
 </plist>

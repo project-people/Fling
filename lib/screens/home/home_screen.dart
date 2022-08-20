@@ -1,3 +1,4 @@
+import 'package:fling/screens/chat/chat_mainpage.dart';
 import 'package:fling/screens/home/components/body.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
@@ -18,7 +19,8 @@ class HomeScreen extends StatelessWidget {
           ),
           actions: <Widget>[
             IconButton(
-                onPressed: () {},
+                onPressed: () {Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => const ChatMain()));},
                 icon: SvgPicture.asset('assets/icons/chat_alarm.svg'))
           ]);
     }
@@ -29,3 +31,5 @@ class HomeScreen extends StatelessWidget {
     );
   }
 }
+
+
