@@ -1,4 +1,4 @@
-import 'package:fling/trade/components/Trade_Stuff_List.dart';
+import 'package:fling/screens/trade/components/Trade_Stuff_List.dart';
 import 'package:flutter/material.dart';
 
 class TradeSf extends StatelessWidget {

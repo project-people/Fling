@@ -1,4 +1,4 @@
-import 'package:fling/chat/components/chat.dart';
+import 'package:fling/screens/chat/components/chat.dart';
 import 'package:flutter/material.dart';
 
 final List<String> name = <String>["김도현", "노준하", "정유정"];

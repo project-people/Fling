@@ -1,5 +1,5 @@
-import 'package:fling/chat/components/Promise.dart';
-import 'package:fling/chat/components/map.dart';
+import 'package:fling/screens/chat/components/Promise.dart';
+import 'package:fling/screens/chat/components/map.dart';
 import 'package:flutter/material.dart';
 
 class ChatPlus extends StatelessWidget {

@@ -1,6 +1,6 @@
-import 'package:fling/chat/chat_list.dart';
-import 'package:fling/chat/components/chatmain_appbar.dart';
-import 'package:fling/trade/trade_main.dart';
+import 'package:fling/screens/chat/chat_list.dart';
+import 'package:fling/screens/chat/components/chatmain_appbar.dart';
+import 'package:fling/screens/trade/trade_main.dart';
 import 'package:flutter/material.dart';
 
 class ChatMain extends StatelessWidget {

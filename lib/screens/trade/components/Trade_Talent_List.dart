@@ -1,4 +1,4 @@
-import 'package:fling/trade/trade_stuff_detail.dart';
+import 'package:fling/screens/trade/trade_stuff_detail.dart';
 import 'package:flutter/material.dart';
 
 final List<String> title = <String>[
@@ -11,8 +11,8 @@ final List<String> title = <String>[
   "함께 코드 짤 사람"
 ];
 
-class StuffList extends StatelessWidget {
-  const StuffList({Key? key}) : super(key: key);
+class TalList extends StatelessWidget {
+  const TalList({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
@@ -79,8 +79,8 @@ class StuffList extends StatelessWidget {
   }
 }
 
-class LittleSfList extends StatelessWidget {
-  const LittleSfList({Key? key}) : super(key: key);
+class LittleTalList extends StatelessWidget {
+  const LittleTalList({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {

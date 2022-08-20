@@ -1,8 +1,8 @@
-import 'package:fling/trade/components/Trade_Stuff_List.dart';
-import 'package:fling/trade/components/Trade_Talent_List.dart';
-import 'package:fling/trade/components/more.dart';
-import 'package:fling/trade/trade_stuff.dart';
-import 'package:fling/trade/trade_talent.dart';
+import 'package:fling/screens/trade/components/Trade_Stuff_List.dart';
+import 'package:fling/screens/trade/components/Trade_Talent_List.dart';
+import 'package:fling/screens/trade/components/more.dart';
+import 'package:fling/screens/trade/trade_stuff.dart';
+import 'package:fling/screens/trade/trade_talent.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 

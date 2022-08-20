@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:intl/intl.dart';
 
 import 'chat_plus_button.dart';
 
@@ -96,14 +95,14 @@ class _ChatState extends State<Chat> {
               onTap: () {
                 _handleSubmitted(_textEditingController.text);
 
-                var now = DateTime.now();
-                var hour = int.parse(DateFormat('HH').format(now));
-                var time = DateFormat('HH:mm').format(now);
-                if (hour > 11) {
-                  var ampm = "오후";
-                } else {
-                  var ampm = "오전";
-                }
+                // var now = DateTime.now();
+                // var hour = int.parse(DateFormat('HH').format(now));
+                // var time = DateFormat('HH:mm').format(now);
+                // if (hour > 11) {
+                //   var ampm = "오후";
+                // } else {
+                //   var ampm = "오전";
+                // }
               },
               child: Container(
                   color: const Color(0xff909090),
