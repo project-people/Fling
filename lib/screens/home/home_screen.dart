@@ -13,15 +13,15 @@ class HomeScreen extends StatelessWidget {
       return AppBar(
           backgroundColor: const Color(0xFF909090),
           elevation: 0,
-          leading: IconButton(
+          /*leading: IconButton(
             onPressed: () {},
             icon: SvgPicture.asset('assets/icons/logo.svg'),
-          ),
+          ),*/
           actions: <Widget>[
             IconButton(
                 onPressed: () {Navigator.push(context,
                     MaterialPageRoute(builder: (context) => const ChatMain()));},
-                icon: SvgPicture.asset('assets/icons/chat_alarm.svg'))
+                icon: Image.asset('assets/icons/chat_alarm.png'))
           ]);
     }
 

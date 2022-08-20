@@ -8,7 +8,7 @@ class ReviewListed {
   Widget thumbnail;
   String title;
   String content;
-  Widget img;
+  int like;
   int saved;
   int comment;
 
@@ -20,7 +20,7 @@ class ReviewListed {
     this.thumbnail,
     this.title,
     this.content,
-    this.img,
+    this.like,
     this.saved,
     this.comment
 );

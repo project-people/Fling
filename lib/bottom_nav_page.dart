@@ -1,5 +1,5 @@
+import 'package:fling/screens/trade/trade_main.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:provider/provider.dart';
 
 import 'package:fling/screens/home/home_screen.dart';
@@ -8,12 +8,12 @@ import 'package:fling/screens/mypage/saved/saved_screen.dart';
 import 'package:fling/screens/mypage/mypage_screen/mypage_screen.dart';
 
 List<Widget> icon = [
-  SvgPicture.asset('assets/icons/bottom_home.svg', width: 35, height: 35),
-  SvgPicture.asset('assets/icons/bottom_review.svg', width: 35, height: 35),
-  SvgPicture.asset('assets/icons/bottom_flea_market.svg',
+  Image.asset('assets/icons/bottom_home.png', width: 35, height: 35),
+  Image.asset('assets/icons/bottom_review.png', width: 35, height: 35),
+  Image.asset('assets/icons/bottom_flea_market.png',
       width: 35, height: 35),
-  SvgPicture.asset('assets/icons/bottom_saved.svg', width: 35, height: 35),
-  SvgPicture.asset('assets/icons/bottom_profile.svg', width: 35, height: 35),
+  Image.asset('assets/icons/bottom_saved.png', width: 35, height: 35),
+  Image.asset('assets/icons/bottom_profile.png', width: 35, height: 35),
 ];
 
 class BottomNavPage extends StatefulWidget {
@@ -27,7 +27,7 @@ class _BottomNavPageState extends State<BottomNavPage> {
   var currentTab = [
     HomeScreen(),
     ReviewListScreen(),
-    Text('플리마켓'),
+    TradeMain(),
     SavedScreen(),
     MypageScreen()
   ];
@@ -55,7 +55,7 @@ class _BottomNavPageState extends State<BottomNavPage> {
           onTap: (index) {
             provider.currentIndex = index;
           },
-          //showSelectedLabels: false,
+          showSelectedLabels: false,
           showUnselectedLabels: false,
         ));
   }

@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 
 class myProfile extends StatelessWidget{
   @override
@@ -16,7 +15,7 @@ class myProfile extends StatelessWidget{
                 Text('이름',style: TextStyle(color: Colors.black)),
                 Text('aaa@gmail.com', style: TextStyle(color: Colors.black)) ,
               ]),
-          SvgPicture.asset('assets/images/profile_image.svg', width: 120, height: 120),
+          Image.asset('assets/images/profile_image.png', width: 120, height: 120),
         ]
       ),
     );

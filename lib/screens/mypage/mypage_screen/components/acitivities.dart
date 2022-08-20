@@ -23,7 +23,7 @@ class Acitivities extends StatelessWidget {
                 IconButton(
                       onPressed: () {Navigator.push(context,
                           MaterialPageRoute(builder: (context) => const ActivitiesScreen()));},
-                      icon: SvgPicture.asset('assets/icons/mypage_cart.svg', width: 60, height: 60),),
+                      icon: Image.asset('assets/icons/mypage_cart.png', width: 60, height: 60),),
                 const Text('나의 활동', style: TextStyle(color: Colors.black, fontSize: 14),),
                 ]
               ),
@@ -35,7 +35,7 @@ class Acitivities extends StatelessWidget {
           IconButton(
             onPressed: () {Navigator.push(context, MaterialPageRoute(
                 builder: (context) => const NotificationScreen()));},
-            icon: SvgPicture.asset('assets/icons/mypage_alarm.svg', width: 60, height: 60),
+            icon: Image.asset('assets/icons/mypage_alarm.png', width: 60, height: 60),
           ),
          const Text('알림', style: TextStyle(color: Colors.black, fontSize: 14))
         ]
@@ -47,7 +47,7 @@ class Acitivities extends StatelessWidget {
                 children: [
                 IconButton(
                     onPressed: () => {provider.currentIndex = 3},
-                  icon: SvgPicture.asset('assets/icons/mypage_runcart.svg', width: 60, height: 60)),
+                  icon: Image.asset('assets/icons/mypage_runcart.png', width: 60, height: 60)),
                   const Text('관심 글', style: TextStyle(color: Colors.black, fontSize:14))
                   ],
             )

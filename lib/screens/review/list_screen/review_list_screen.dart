@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/svg.dart';
 
 import 'package:fling/screens/review/list_screen/components/body.dart';
 
@@ -17,7 +16,7 @@ class ReviewListScreen extends StatelessWidget {
           actions: <Widget>[
             IconButton(
                 onPressed: () {},
-                icon: SvgPicture.asset('assets/icons/chat_alarm.svg'))
+                icon: Image.asset('assets/icons/chat_alarm.png'))
           ]);
     }
 
