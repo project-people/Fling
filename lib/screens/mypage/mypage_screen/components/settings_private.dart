@@ -17,22 +17,22 @@ class PrivateSettings extends StatelessWidget {
           children: [
             TextButton.icon(
                 onPressed: () {},
-                icon: SvgPicture.asset('assets/icons/mypage_spot.svg',width: 30, height: 30 ), label: Text('동네인증', style: TextStyle(color: Colors.black)),
+                icon: Image.asset('assets/icons/mypage_spot.png',width: 30, height: 30 ), label: Text('동네인증', style: TextStyle(color: Colors.black)),
             ),
             TextButton.icon(
               onPressed: () {Navigator.push(context, MaterialPageRoute(
                   builder: (context) => const PrivacyScreen()));},
-              icon: SvgPicture.asset('assets/icons/mypage_info.svg',width: 30, height: 30 ), label: Text('개인정보',style: TextStyle(color: Colors.black)),
+              icon: Image.asset('assets/icons/mypage_info.png',width: 30, height: 30 ), label: Text('개인정보',style: TextStyle(color: Colors.black)),
             ),
              TextButton.icon(
               onPressed: () {Navigator.push(context, MaterialPageRoute(
     builder: (context) => const CustomerServiceScreen()));},
-               icon: SvgPicture.asset('assets/icons/mypage_center.svg',width: 30, height: 30 ), label: Text('고객센터',style: TextStyle(color: Colors.black)),
+               icon: Image.asset('assets/icons/mypage_center.png',width: 30, height: 30 ), label: Text('고객센터',style: TextStyle(color: Colors.black)),
             ),
             TextButton.icon(
                onPressed: () {Navigator.push(context, MaterialPageRoute(
                    builder: (context) => const PreferencesScreen()));},
-                icon: SvgPicture.asset('assets/icons/mypage_setting.svg',width: 30, height: 30 ), label: Text('환경설정',style: TextStyle(color: Colors.black)),
+                icon: Image.asset('assets/icons/mypage_setting.png',width: 30, height: 30 ), label: Text('환경설정',style: TextStyle(color: Colors.black)),
             )
           ],
         )

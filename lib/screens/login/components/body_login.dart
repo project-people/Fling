@@ -123,7 +123,7 @@ class _BodyLogin extends State<BodyLogin> {
                             onPressed: () => {},
                             child: Row(
                               children: <Widget>[
-                                SvgPicture.asset('assets/icons/naver_icon.svg', width: 45, height: 45),
+                                Image.asset('assets/icons/naver_icon.png', width: 45, height: 45),
                                 Spacer(),
                                 const Text(
                                 '네이버 로그인',
@@ -146,7 +146,7 @@ class _BodyLogin extends State<BodyLogin> {
                               onPressed: () => {},
                         child: Row(
                             children: <Widget>[
-                              SvgPicture.asset('assets/icons/kakaotalk_icon.svg', width:45, height: 45 ),
+                              Image.asset('assets/icons/kakaotalk_icon.png', width:45, height: 45 ),
                               Spacer(),
                               const Text(
                                   '카카오톡 로그인',

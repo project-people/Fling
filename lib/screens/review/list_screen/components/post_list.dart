@@ -14,10 +14,10 @@ List<ReviewListed> reviewList = [
       '즐거웠던 문현 플리마켓 후기',
       '설레임과 걱정이 공존하는 플리마켓을 앞두고 귀엽게 뽑아본 '
           '포스터들 너무 귀엽죠? 준비를 마치고 드디어 행사장으로! 오늘처럼...',
-      SvgPicture.asset('assets/icons/logo.svg', width: 29, height: 29),
+      13,
       6,
-      6
-  ), ReviewListed(
+      6),
+  ReviewListed(
       1,
       SvgPicture.asset('assets/icons/circle.svg', width: 42, height: 42),
       '플링이',
@@ -26,22 +26,21 @@ List<ReviewListed> reviewList = [
       '즐거웠던 문현 플리마켓 후기',
       '설레임과 걱정이 공존하는 플리마켓을 앞두고 귀엽게 뽑아본 '
           '포스터들 너무 귀엽죠? 준비를 마치고 드디어 행사장으로! 오늘처럼...',
-      SvgPicture.asset('assets/icons/logo.svg', width: 29, height: 29),
+      11,
       5,
-      5
-  )
+      5)
 ];
 
+Widget imgLike = Image.asset('assets/icons/like.png', width: 29, height: 29);
+Widget imgSaved = Image.asset('assets/icons/saved.png', width: 17, height: 22);
 Widget imgComment =
-SvgPicture.asset('assets/icons/logo.svg', width: 24, height: 22);
-Widget imgSaved =
-SvgPicture.asset('assets/icons/logo.svg', width: 17, height: 22);
+    Image.asset('assets/icons/comment_1.png', width: 24, height: 22);
 
 getFormettedTime(DateTime datetime) {
   if (DateTime.now().difference(datetime).inDays < 1) {
     return DateFormat('HH:mm').format(datetime);
   } else {
-    return  DateFormat('yyyy.MM.dd').format(datetime);
+    return DateFormat('yyyy.MM.dd').format(datetime);
   }
 }
 
@@ -72,25 +71,40 @@ Widget Function(int index) frame = (index) {
                 padding: const EdgeInsets.only(right: 8),
                 child: reviewList[index].profile),
             Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
-              Text(reviewList[index].nickname, style: const TextStyle(fontSize: 13)),
-              Text(getFormettedTime(reviewList[index].createdT), style: const TextStyle(fontSize: 13))
+              Text(reviewList[index].nickname,
+                  style: const TextStyle(fontSize: 13)),
+              Text(getFormettedTime(reviewList[index].createdT),
+                  style: const TextStyle(fontSize: 13))
             ])
           ],
         ),
-        Container(padding: const EdgeInsets.fromLTRB(0, 13, 0, 13), height: 210, width: 343, child: reviewList[index].thumbnail),
+        Container(
+            padding: const EdgeInsets.fromLTRB(0, 13, 0, 13),
+            height: 210,
+            width: 343,
+            child: reviewList[index].thumbnail),
         Text(reviewList[index].title, style: const TextStyle(fontSize: 19)),
-        Text(reviewList[index].content, maxLines: 2, overflow: TextOverflow.ellipsis, style: const TextStyle(fontSize: 13)),
+        Text(reviewList[index].content,
+            maxLines: 2,
+            overflow: TextOverflow.ellipsis,
+            style: const TextStyle(fontSize: 13)),
         const Padding(padding: EdgeInsets.only(top: 14)),
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceBetween,
           children: [
-          reviewList[index].img,
+            Row(children: [
+              imgLike,
+              const Padding(padding: EdgeInsets.all(3)),
+              Text(reviewList[index].like.toString())]),
             Row(
               children: [
                 Row(children: [
                   imgSaved,
+                  const Padding(padding: EdgeInsets.all(3)),
                   Text(reviewList[index].saved.toString()),
+                  const Padding(padding: EdgeInsets.all(6)),
                   imgComment,
+                  const Padding(padding: EdgeInsets.all(3)),
                   Text(reviewList[index].comment.toString())
                 ])
               ],
