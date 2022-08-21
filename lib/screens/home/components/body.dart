@@ -14,7 +14,7 @@ class Body extends StatelessWidget {
       children: const <Widget>[
         Recommend(),
         Fleamarket(),
-        //Category(),
+        Category(),
         Review()
       ],
     ));
