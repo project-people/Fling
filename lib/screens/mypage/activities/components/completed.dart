@@ -8,10 +8,11 @@ List<List> contents = [
 ];
 
 Widget thumbnail =
-    SvgPicture.asset('assets/icons/logo.svg', width: 94, height: 94);
-Widget heart = SvgPicture.asset('assets/icons/logo.svg', width: 28, height: 28);
+SvgPicture.asset('assets/images/section_1.svg', fit: BoxFit.cover);
+Widget heart =
+Image.asset('assets/icons/like_empty.png', width: 28, height: 28);
 Widget comment =
-    SvgPicture.asset('assets/icons/logo.svg', width: 28, height: 28);
+Image.asset('assets/icons/comment_2.png', width: 28, height: 28);
 
 Widget listviewBuilder() {
   if (contents.isNotEmpty) {
@@ -35,7 +36,10 @@ Widget Function(int index) frame = (index) {
     color: const Color(0xFFF8F8F8),
     child: Column(children: [
       Row(children: [
-        thumbnail,
+      Container(
+      height: 94,
+          width:94,
+          child:thumbnail),
         const Padding(padding: EdgeInsets.only(left: 26)),
         SizedBox(
             width: 206,
